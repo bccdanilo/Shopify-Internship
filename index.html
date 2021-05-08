@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class ="titlebox ">
+      <h3 class="animate__animated animate__rubberBand">The Shoppies</h3>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="searchTitle" type="text" class="validate" />
+          <label for="movie"
+            ><i class="material-icons">search</i> Movie Title</label
+          >
+        </div>
+      </div>
+    </div>
+
+      <div class="flex-row align-top">
+        <div class="panel" id="movielist">
+          <div class="itens">
+          <div id="displayQuery"><h5>Search Titles</h5></div>
+          <div class="buttonArea">
+          <div> <button class='btn-floating blue prev'>   <i class="material-icons">chevron_left</i> </button></div>
+          <div> <button class='btn-floating blue next'> <i class="material-icons">chevron_right</i>  </button></div>
+        </div>
+        </div>
+          <div id="innerPanel" class="innerMovie">
+
+          </div>
+
+          
+          <div class="flex-row align-center hidden">
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+            <span style="margin-left: 2%">Loading...</span>
+          </div>
+        </div>
+
+        <div class="panel " id="mylist">
+          <h5 class="title">Nominations</h5>
+          <div id="innerList" class="innerMovie">
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="demo-modal-fixed-footer modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h5>My Nominations</h5>
+          <div class="row">
+
+          <div class="myContent innerMovie"></div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn">Confirm</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@media screen and (max-width: 600px) {
+    .flex-row{
+      display:block !important
+    }
+    .panel{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+  }
+
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+input[type=text]:not(.browser-default){
+    height: 60px;
+}
+
+
+.align-top{
+    align-items: flex-start;
+}
+
+.align-center{
+    justify-content: center;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.next, .prev{
+visibility: hidden;
+}
+
+.panel{
+    width: 50%;
+    border: 1px solid rgb(5, 245, 5);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.buttonArea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerMovie p { 
+    position:relative; 
+}
+.innerMovie p span { 
+    position:absolute; 
+    display:none; 
+    margin-left: 80%;
+    z-index:99; 
+
+}
+.innerMovie p:hover span { 
+    display:block;
+ }
+
+ 
+li {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.bluetext{
+    color:blue;
+    text-decoration: underline;
+}
+.modal{
+    border-radius: 2%;
+}
